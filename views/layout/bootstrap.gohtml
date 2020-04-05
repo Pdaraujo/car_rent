@@ -9,14 +9,20 @@
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="//stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
               integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="/assets/styles.css" rel="stylesheet">
 
         <title>Car Rent</title>
     </head>
     <body>
-        <div class="container-fluid">
-            {{template "yield"}}
-        </div>
-
+        <header>
+            {{template "navbar"}}
+        </header>
+        <main role="main" class="flex-shrink-0">
+            <div class="container-fluid">
+                {{template "yield"}}
+            </div>
+        </main>
+        <footer></footer>
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="//code.jquery.com/jquery-3.4.1.slim.min.js"
