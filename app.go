@@ -11,6 +11,6 @@ const port = ":8080"
 
 func main() {
 	r := routes.NewRouter()
-	fmt.Printf("Listenning on port: %s", port)
+	fmt.Printf("\nListenning on port: %s\n", port)
 	log.Fatal(http.ListenAndServe(port, r))
 }
